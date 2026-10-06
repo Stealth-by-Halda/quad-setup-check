@@ -1,0 +1,16 @@
+/.bundle
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/tmp/pids/*
+!/tmp/pids/.keep
+/storage/*
+!/storage/.keep
+/config/master.key
+/.env*
+/node_modules
+/public/vite*
+.DS_Store
+*.local
+/config/credentials.yml.enc

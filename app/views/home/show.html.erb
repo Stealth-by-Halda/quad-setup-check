@@ -1,0 +1,8 @@
+<h1 class="mb-2 text-2xl font-semibold tracking-tight">Your environment works 🎉</h1>
+<p class="mb-6 text-slate-600">Rails is serving this page from PostgreSQL, and React is rendering the box below.</p>
+<dl class="mb-6 grid grid-cols-3 gap-2 text-sm">
+  <dt class="text-slate-500">Ruby</dt><dd class="col-span-2"><%= @ruby_version %></dd>
+  <dt class="text-slate-500">Rails</dt><dd class="col-span-2"><%= @rails_version %></dd>
+  <dt class="text-slate-500">PostgreSQL</dt><dd class="col-span-2"><%= @database %></dd>
+</dl>
+<%= react_component "Greeting", { name: "there" } %>

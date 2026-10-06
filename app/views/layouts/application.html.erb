@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Setup check</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <%= vite_client_tag %>
+    <%= vite_react_refresh_tag %>
+    <%= vite_stylesheet_tag "application.css" %>
+    <%= vite_typescript_tag "application.tsx" %>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <main class="mx-auto max-w-xl px-4 py-12"><%= yield %></main>
+  </body>
+</html>

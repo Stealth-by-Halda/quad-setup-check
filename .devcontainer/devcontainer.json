@@ -1,0 +1,23 @@
+{
+  "name": "quad-setup-check",
+  "dockerComposeFile": "compose.yaml",
+  "service": "rails-app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" },
+    "ghcr.io/rails/devcontainer/features/postgres-client": { "version": "17" }
+  },
+  "containerEnv": {
+    "DB_HOST": "postgres"
+  },
+  "forwardPorts": [3000, 3036],
+  "portsAttributes": {
+    "3000": { "label": "Quad", "onAutoForward": "openBrowser" },
+    "3036": { "label": "Vite", "onAutoForward": "silent" }
+  },
+  "postCreateCommand": "bin/setup --skip-server",
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md"] }
+  }
+}
