@@ -48,3 +48,5 @@ gem "vite_rails", "~> 3.11"
 gem "factory_bot_rails", "~> 6.5", group: :test
 
 gem "csv", "~> 3.3"
+
+gem "foreman", "~> 0.90.0", group: :development

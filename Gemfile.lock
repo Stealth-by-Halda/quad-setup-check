@@ -116,6 +116,8 @@ GEM
     factory_bot_rails (6.5.1)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
+    foreman (0.90.0)
+      thor (~> 1.4)
     globalid (1.4.0)
       activesupport (>= 6.1)
     i18n (1.15.2)
@@ -339,6 +341,7 @@ DEPENDENCIES
   csv (~> 3.3)
   debug
   factory_bot_rails (~> 6.5)
+  foreman (~> 0.90.0)
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)
